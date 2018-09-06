@@ -8,3 +8,122 @@
     font-family: 'Droid Serif';
     src: url('../fonts/droid-serif/DroidSerif-Regular.ttf') format("truetype");
 }
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------INTRO-------*/
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/intro-bg.jpg') center  no-repeat;
+    background-size: cover;
+
+    color: #fff;
+}
+
+.intro-header {
+    padding-top: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-header__logo {
+    width: 170px;
+    height: 52px;
+}
+
+.intro-menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 22px;
+    font-style: normal;
+}
+
+.intro-menu__list li {
+    margin: 20px 10px;
+}
+
+.intro-menu__list li a {
+    text-decoration: none;
+
+    color: #fff;
+    transition: 0.3ms all ease-out;
+}
+
+.intro-main {
+    margin: 200px auto 150px auto;
+}
+
+.intro-main h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+.intro__arrow p{
+    padding-top: 80px;
+
+    text-align: center;
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 27px;
+
+    background: url('../img/intro-arrow.png');
+    background-size: auto 60px;
+    background-position: center 5px;
+    background-repeat: no-repeat;
+}
+
+.intro__arrow{
+    text-align: center;
+}
+
+
+/*------ABOUT------*/
+.about {
+    width: 100%;
+    background-color: #34495e;
+
+    color: #fff;
+
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.about h2 {
+    padding: 110px 0 60px 0;
+    text-align: center;
+
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.about p {
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 24px;
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
