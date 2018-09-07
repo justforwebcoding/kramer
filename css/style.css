@@ -268,3 +268,23 @@ ul {
 
     margin-left: 30px;
 }
+
+/*------CONTACT-----*/
+.contact {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #2c3e50;
+    font-size: 45px;
+}
+
+.contact h3 {
+    color: #2c3e50;
+    font-size: 26px;
+}
+
+.contact-info {
+
+}
