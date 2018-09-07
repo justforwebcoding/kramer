@@ -36,6 +36,19 @@
     </section>
     <section class="about">
         <div class="container">
+            <header id="stick" class="intro-header">
+                <div class="intro-header__logo col-lg-2 col-sm-6">
+                    <img  src="img/logo.png" alt="kramer">
+                </div>
+                <nav class="intro-menu col-lg-5 col-sm-6">
+                    <ul class="intro-menu__list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
             <h2>About</h2>
             <div class="row justify-content-lg-center">
                 <p class="col-lg-8">This is Photoshop's version  of Lorem Ipsum. Proin gravida<br>
@@ -43,26 +56,104 @@
                     aliquet. Aenean
                     sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
             </div>
-            <ul class="about__list">
-                <li>
-                    sssssssssssss
+            <ul class="about__list row">
+                <li class="col-12 col-lg-4">
+                    <img src="img/about/services.png" alt="services">
+                    <h3>Services</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                                                          Aenean sollicitudin, lorem quis bibendum auctor,</p>
                 </li>
-                <li>
-                    ssssssssss
+                <li class="col-12 col-lg-4">
+                    <img src="img/about/retina.png" alt="retina">
+                    <h3>Retina Display</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                        aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
                 </li>
-                <li>
-                    sssssssssss
+                <li class="col-12 col-lg-4">
+                    <img src="img/about/support.png" alt="support">
+                    <h3>Full Support</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
                 </li>
             </ul>
         </div>
     </section>
+    <section class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12">
+                    <ul class="portfolio-filter__list">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Web</a></li>
+                        <li><a href="#">Illustration</a></li>
+                        <li><a href="#">Motion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="portfolio-works__list row">
+                <li class="col-12 col-md-6 col-lg-4"><img src="img/portfolio/1.jpg" alt=""></li>
+                <li class="col-12 col-md-6 col-lg-4"><img src="img/portfolio/2.jpg" alt=""></li>
+                <li class="col-12 col-md-6 col-lg-4"><img src="img/portfolio/3.jpg" alt=""></li>
+                <li class="col-12 col-md-6 col-lg-4"><img src="img/portfolio/4.jpg" alt=""></li>
+                <li class="col-12 col-md-6 col-lg-4"><img src="img/portfolio/5.jpg" alt=""></li>
+                <li class="col-12 col-md-6 col-lg-4"><img src="img/portfolio/6.jpg" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <h2>Team</h2>
+            <ul class="team__list row justify-content-md-center">
+                <li class="col-12 col-sm-6 col-md-4">
+                    <img src="img/team/cosmo.jpg" alt="cosmo">
+                    <h3>Cosmo Kramer</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
+                    <ul class="social">
+                        <li class="tw"></li>
+                        <li class="inst"></li>
+                    </ul>
+                </li>
+                <li class="col-12 col-md-4">
+                    <img src="img/team/george.jpg" alt="george">
+                    <h3>George Constanza</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
+                    <ul class="social">
+                        <li class="tw"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
 
+        </div>
+    </section>
 
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById('stick');
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        }
+    </script>
 </body>
 </html>
 

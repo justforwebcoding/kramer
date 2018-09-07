@@ -123,7 +123,148 @@ ul {
 }
 
 .about__list {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about__list li {
+    padding: 40px 20px;
+
+}
+
+.about__list li img {
+    width: 155px;
+    height: 155px;
+}
+
+.about__list li h3 {
+    margin: 25px 0;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.about__list li p {
+    font-family: 'Droid Serif', sans-serif;
+
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.about .intro-header {
+    padding-top: 0px;
+    background-color: #2c3e50;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 58%;
+    z-index: 999;
+}
+
+
+/*--------PORTFOLIO---------*/
+.portfolio {
+    padding: 100px 0;
+    text-align: center;
+
+    color: #2c3e50;
+
+}
+
+.portfolio h2 {
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+
+.portfolio-filter__list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 95px;
+}
+
+
+.portfolio-filter__list a {
+    display: block;
+    padding: 0 20px;
+    line-height: 35px;
+    border-radius: 50px;
+    color: #000;
+
+    border: 1px solid transparent;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.portfolio-filter__list a:hover {
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+.portfolio-works__list li {
+    margin-top: 30px;
+}
+
+.portfolio-works__list li img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*-------TEAM-------*/
+.team {
+    padding: 100px 0;
+    background-color: #2980b9;
+    color: #fff;
+
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 45px;
+}
+
+.team__list li {
+    margin-top: 70px;
+}
+
+.team__list li img {
+    border-radius: 50%;
+}
+
+.team__list li h3 {
+    margin-top: 30px;
+}
+
+.team__list li p {
+    padding: 0 35px;
+    margin-top: 35px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -30px;
+}
+
+.tw {
+    background: url('../img/social/twitter.png') center no-repeat;
+    width: 60px;
+    height: 60px;
+}
+
+.inst {
+    background: url('../img/social/instagram.png') center no-repeat;
+    width: 60px;
+    height: 60px;
+
+    margin-left: 30px;
 }
