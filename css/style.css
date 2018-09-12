@@ -69,6 +69,10 @@ ul {
     transition: 0.3ms all ease-out;
 }
 
+.intro-menu .icon {
+    display: none;
+}
+
 .intro-main {
     margin: 200px auto 150px auto;
 }
@@ -97,6 +101,10 @@ ul {
 
 
 /*------ABOUT------*/
+.header-bg {
+    background-color: #2c3e50;
+}
+
 .about {
     width: 100%;
     background-color: #34495e;
@@ -106,6 +114,7 @@ ul {
     font-family: 'Droid Serif', sans-serif;
     font-size: 45px;
     font-weight: bold;
+
 }
 
 .about h2 {
@@ -159,7 +168,7 @@ ul {
 .sticky {
     position: fixed;
     top: 0;
-    width: 58%;
+    width: 100%;
     z-index: 999;
 }
 
@@ -378,5 +387,45 @@ ul {
     display: flex;
     align-items: center;
     margin-top: 35px;
+}
+
+
+
+
+/*------ADAPTIVE------*/
+@media screen and (max-width: 1010px) {
+    .intro-menu__list li a {
+        display: none; /* скройте все элементы &lt;li&gt; */
+        margin: 0;
+    }
+
+    .intro-menu__list li .icon {
+        display: block;
+
+        font-size: 40px;
+    }
+
+    .intro-menu.responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+
+    .intro-header .intro-menu.responsive {
+        height: 340px;
+    }
+
+    .intro-menu.responsive a.icon {
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .header-bg .intro-header {
+        display: none;
+    }
 }
 

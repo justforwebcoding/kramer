@@ -14,15 +14,16 @@
     <section class="intro">
         <div class="container">
             <header class="intro-header">
-                <div class="intro-header__logo col-lg-2 col-sm-6">
+                <div class="intro-header__logo">
                     <img  src="img/logo.png" alt="kramer">
                 </div>
-                <nav class="intro-menu col-lg-5 col-sm-6">
+                <nav class="intro-menu">
                     <ul class="intro-menu__list">
                         <li><a href="#">About</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="" id="menu" class="icon">&#9776;</a></li>
                     </ul>
                 </nav>
             </header>
@@ -35,7 +36,7 @@
         </div>
     </section>
     <section class="about">
-        <div class="container">
+        <div class="header-bg">
             <header id="stick" class="intro-header">
                 <div class="intro-header__logo col-lg-2 col-sm-6">
                     <img  src="img/logo.png" alt="kramer">
@@ -46,9 +47,12 @@
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="" id="menu" class="icon">&#9776;</a></li>
                     </ul>
                 </nav>
             </header>
+        </div>
+        <div class="container">
             <h2>About</h2>
             <div class="row justify-content-lg-center">
                 <p class="col-lg-8">This is Photoshop's version  of Lorem Ipsum. Proin gravida<br>
@@ -192,8 +196,21 @@
         // Get the header
         var header = document.getElementById('stick');
 
+        //BURGER-MENU
+        var menu = document.getElementById('menu');
+
+        menu.onclick = function myClick() {
+            var x = document.querySelector('.intro-menu__list');
+
+            if(x.className === 'intro-menu__list') {
+                x += ' responsive';
+            } else {
+                x = '.intro-menu__list';
+            }
+        }
         // Get the offset position of the navbar
         var sticky = header.offsetTop;
+
 
         // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
         function myFunction() {
@@ -203,6 +220,7 @@
                 header.classList.remove('sticky');
             }
         }
+
     </script>
 </body>
 </html>
